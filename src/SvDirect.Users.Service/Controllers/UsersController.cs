@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SvDirect.Users.Service.Dtos;
-using BCrypt;
+using SvDirect.Users.Service.Extensions;
+using SvDirect.Users.Service.Entities;
+using SvDirect.Common;
 
 namespace SvDirect.Users.Service.Controllers
 {
@@ -14,81 +16,74 @@ namespace SvDirect.Users.Service.Controllers
     public class UsersController : ControllerBase
     {
 
-        private static readonly List<UserDto> users = new()
+        private readonly IRepository<User> usersRepository;
+
+        public UsersController(IRepository<User> usersRepository)
         {
-            new UserDto(Guid.NewGuid(), "Sizwe", "Mbatha", "SizweMbatha@hotmail.com", BCrypt.Net.BCrypt.HashPassword("password123"), DateTime.Now.AddYears(22), DateTime.Parse("2024-11-08T05:20:36.887Z"), DateTime.Parse("2024-11-08T05:28:39.887Z")),
-            new UserDto(Guid.NewGuid(), "Bulani", "Mongezwe", "BulaniMongezwe@hotmail.com", BCrypt.Net.BCrypt.HashPassword("password123"), DateTime.Now.AddYears(17), DateTime.Parse("2024-11-08T05:23:36.887Z"), DateTime.Parse("2024-11-08T05:29:44.887Z")),
-            new UserDto(Guid.NewGuid(), "Thumbulami", "Mjoxa", "ThumbulamiMjoxa@outlook.com", BCrypt.Net.BCrypt.HashPassword("password123"), DateTime.Now.AddYears(29), DateTime.Parse("2024-11-08T05:17:36.887Z"), DateTime.Parse("2024-11-08T05:30:36.887Z")),
-        };
+            this.usersRepository = usersRepository;
+        }
 
         [HttpGet]
-        public IEnumerable<UserDto> GetAll()
+        public async Task<IEnumerable<UserDto>> GetAllAsync()
         {
-            return users;
+            return (await usersRepository.GetUsersAllAsync())
+            .Select(item => item.AsDto());
         }
 
         [HttpGet("{id}")]
-        public ActionResult<UserDto> GetById(Guid id)
+        public async Task<ActionResult<UserDto>> GetByIdAsync(Guid id)
         {
-            var user = users.Where(t => t.Id == id).FirstOrDefault();
+            var user = await usersRepository.GetUserAsync(id);
+
             if (user == null)
             {
                 return NotFound("user not found");
             }
-            return user;
+            return user.AsDto();
         }
 
         [HttpPost]
-        public ActionResult CreateUser(CreateUserDto user)
+        public async Task<ActionResult> CreateUserAsync(CreateUserDto user)
         {
-
-            var newUser = new UserDto(Guid.NewGuid(), user.FirstName, user.LastName, user.Email, BCrypt.Net.BCrypt.HashPassword(user.Password), user.DateOfBirth, DateTimeOffset.UtcNow, DateTimeOffset.UtcNow);
-
-            users.Add(newUser);
-
-            return CreatedAtAction(nameof(GetById), new { id = newUser.Id }, user);
+            User newUser = user.AsUser();
+            await usersRepository.CreateUserAsync(newUser);
+            return CreatedAtAction(nameof(GetByIdAsync), new { id = newUser.Id }, user);
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateUser(Guid id, UpdateUserDto user)
+        public async Task<ActionResult> UpdateUser(Guid id, UpdateUserDto user)
         {
 
-            var existingUser = users.Where(t => t.Id == id).SingleOrDefault();
+            var existingItem = await usersRepository.GetUserAsync(id);
 
-            if (existingUser == null)
+            if (existingItem == null)
             {
-                return NotFound("user not found");
+                return NotFound();
             }
 
-            var updateditem = existingUser with
-            {
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Email = user.Email,
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.Password),
-                DateOfBirth = user.DateOfBirth,
-                UpdateAt = DateTimeOffset.UtcNow
-            };
+            existingItem.FirstName = user.FirstName;
+            existingItem.LastName = user.LastName;
+            existingItem.Email = user.Email;
+            existingItem.DateOfBirth = user.DateOfBirth;
+            existingItem.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            existingItem.UpdateAt = DateTimeOffset.UtcNow;
 
-            var index = users.FindIndex(y => y.Id == existingUser.Id);
-            if (index < 0)
-            {
-                return NotFound("index of user not found");
-            }
-            users[index] = updateditem;
+            await usersRepository.UpdateAsync(existingItem);
 
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeleteUser(Guid id)
+        public async Task<ActionResult> DeleteUserAsync(Guid id)
         {
-            var index = users.FindIndex(y => y.Id == id);
-            if (index < 0)
+            var existingItem = await usersRepository.GetUserAsync(id);
+
+            if (existingItem == null)
             {
-                return NotFound("index of user not found");
+                return NotFound();
             }
-            users.RemoveAt(index);
+
+            await usersRepository.RemoveUserAsync(id);
 
             return NoContent();
         }
