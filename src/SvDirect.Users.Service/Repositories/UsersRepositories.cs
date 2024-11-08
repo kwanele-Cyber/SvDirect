@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using SvDirect.Users.Service.Entities;
 
@@ -10,10 +11,11 @@ namespace SvDirect.Users.Service.Repositories
     {
         private const string collectionName = "items";
         private readonly IMongoCollection<User> dbCollection;
-        private readonly FilterDefinitionBuilder<User> filterBuilder;
+        private readonly FilterDefinitionBuilder<User> filterBuilder = new();
 
         public UsersRepository()
         {
+
             var mongoClient = new MongoClient("mongodb://localhost:27017");
             var database = mongoClient.GetDatabase("Users");
             dbCollection = database.GetCollection<User>(collectionName);
