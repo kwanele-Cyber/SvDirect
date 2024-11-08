@@ -15,8 +15,9 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
 using SvDirect.Users.Service.Entities;
-using SvDirect.Users.Service.Repositories;
-using SvDirect.Users.Service.Settings;
+using SvDirect.Common;
+using SvDirect.Common.MongoDB;
+using SvDirect.Common.Settings;
 
 namespace SvDirect.Users.Service
 {
@@ -36,7 +37,7 @@ namespace SvDirect.Users.Service
         public void ConfigureServices(IServiceCollection services)
         {
             serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
-            
+
             services.AddMongo()
                 .AddMongoRepository<User>("Users");
 

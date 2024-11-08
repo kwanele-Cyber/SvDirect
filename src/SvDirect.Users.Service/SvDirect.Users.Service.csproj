@@ -8,6 +8,7 @@
     <PackageReference Include="BCrypt" Version="1.0.0" />
     <PackageReference Include="BCrypt.Net" Version="0.1.0" />
     <PackageReference Include="MongoDB.Driver" Version="3.0.0" />
+    <PackageReference Include="SvDirect.Common" Version="1.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 

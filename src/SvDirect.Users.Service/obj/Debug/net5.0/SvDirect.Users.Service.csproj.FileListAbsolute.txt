@@ -40,3 +40,11 @@ c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Servi
 c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Snappier.dll
 c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\ZstdSharp.dll
 c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\obj\Debug\net5.0\SvDirect.Users.Service.sourcelink.json
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\SvDirect.Common.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

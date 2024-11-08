@@ -4,10 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SvDirect.Users.Service.Dtos;
-using BCrypt;
-using SvDirect.Users.Service.Repositories;
 using SvDirect.Users.Service.Extensions;
 using SvDirect.Users.Service.Entities;
+using SvDirect.Common;
 
 namespace SvDirect.Users.Service.Controllers
 {

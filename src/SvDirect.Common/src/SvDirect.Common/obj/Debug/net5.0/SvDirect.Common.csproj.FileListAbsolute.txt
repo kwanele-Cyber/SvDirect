@@ -1,0 +1,13 @@
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.csproj.AssemblyReference.cache
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.AssemblyInfoInputs.cache
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.AssemblyInfo.cs
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.csproj.CoreCompileInputs.cache
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.sourcelink.json
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\bin\Debug\net5.0\SvDirect.Common.deps.json
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\bin\Debug\net5.0\SvDirect.Common.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\bin\Debug\net5.0\SvDirect.Common.pdb
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\refint\SvDirect.Common.dll
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\SvDirect.Common.pdb
+C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\obj\Debug\net5.0\ref\SvDirect.Common.dll

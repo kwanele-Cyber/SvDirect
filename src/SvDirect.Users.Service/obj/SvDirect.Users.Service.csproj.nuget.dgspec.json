@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {}
+    "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {}
   },
   "projects": {
-    "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {
+    "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
+        "projectUniqueName": "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
         "projectName": "SvDirect.Users.Service",
-        "projectPath": "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
+        "projectPath": "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
         "packagesPath": "C:\\Users\\cash1\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\obj\\",
+        "outputPath": "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cash1\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,6 +20,7 @@
           "net5.0"
         ],
         "sources": {
+          "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,6 +55,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "SvDirect.Common": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

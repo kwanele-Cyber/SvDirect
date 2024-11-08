@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SvDirect.Common</id>
+    <version>1.0.0</version>
+    <authors>SvDirect.Common</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="8b03aa11f3fd062bec21149a8336098b8abe93e3" />
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.Extensions.Configuration" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="8.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="8.0.1" exclude="Build,Analyzers" />
+        <dependency id="MongoDb.Driver" version="3.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Common\src\SvDirect.Common\bin\Release\net5.0\SvDirect.Common.dll" target="lib\net5.0\SvDirect.Common.dll" />
+  </files>
+</package>
