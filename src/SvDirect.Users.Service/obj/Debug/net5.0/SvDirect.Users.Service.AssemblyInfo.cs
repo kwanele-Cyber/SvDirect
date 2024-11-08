@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SvDirect.Users.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+364745df2dddb97090ce82b9dfedf956904f32ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc102b2b3ded9b49825cb4470c06787fe0f80e91")]
 [assembly: System.Reflection.AssemblyProductAttribute("SvDirect.Users.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SvDirect.Users.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

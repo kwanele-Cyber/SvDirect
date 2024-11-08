@@ -4,7 +4,9 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace SvDirect.Users.Service.Entities
 {
-    public class User
+
+
+    public class User : IEntity
     {
         public User(Guid id, string firstName, string lastName, string email, string passwordHash, DateTime dateOfBirth, DateTimeOffset createdAt, DateTimeOffset updateAt)
         {

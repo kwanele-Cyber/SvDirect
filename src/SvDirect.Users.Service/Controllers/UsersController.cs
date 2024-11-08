@@ -17,7 +17,12 @@ namespace SvDirect.Users.Service.Controllers
     public class UsersController : ControllerBase
     {
 
-        private readonly UsersRepository usersRepository = new();
+        private readonly IRepository<User> usersRepository;
+
+        public UsersController(IRepository<User> usersRepository)
+        {
+            this.usersRepository = usersRepository;
+        }
 
         [HttpGet]
         public async Task<IEnumerable<UserDto>> GetAllAsync()
