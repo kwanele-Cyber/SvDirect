@@ -30,12 +30,15 @@ namespace SvDirect.Users.Service.Repositories
             return await dbCollection.Find(filter).FirstOrDefaultAsync();
         }
 
-        public async Task CreateUser(User user)
+        public async Task CreateUserAsync(User user)
         {
             if (user == null)
             {
                 throw new ArgumentNullException(nameof(user));
             }
+
+            user.CreatedAt = DateTimeOffset.UtcNow;
+            user.UpdateAt = DateTimeOffset.UtcNow;
 
             await dbCollection.InsertOneAsync(user);
         }
@@ -48,13 +51,13 @@ namespace SvDirect.Users.Service.Repositories
             }
 
             FilterDefinition<User> filter = filterBuilder.Eq(entity => entity.Id, user.Id);
-
+            user.UpdateAt = DateTimeOffset.UtcNow;
             await dbCollection.ReplaceOneAsync(filter, user);
         }
 
-        public async Task RemoveUser(Guid id)
+        public async Task RemoveUserAsync(Guid id)
         {
-            
+
             FilterDefinition<User> filter = filterBuilder.Eq(entity => entity.Id, id);
 
             await dbCollection.DeleteOneAsync(filter);

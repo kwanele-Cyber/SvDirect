@@ -33,3 +33,10 @@ C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Servi
 C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\obj\Debug\net5.0\ref\SvDirect.Users.Service.dll
 C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\DevOne.Security.Cryptography.BCrypt.dll
 C:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\BCrypt.Net.dll
+c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\DnsClient.dll
+c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\MongoDB.Bson.dll
+c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\MongoDB.Driver.dll
+c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\SharpCompress.dll
+c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\Snappier.dll
+c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\bin\Debug\net5.0\ZstdSharp.dll
+c:\Users\cash1\Projects\ApplicationDevelopment\SvDirect\src\SvDirect.Users.Service\obj\Debug\net5.0\SvDirect.Users.Service.sourcelink.json

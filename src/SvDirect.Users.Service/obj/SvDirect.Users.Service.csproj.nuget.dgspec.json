@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {}
+    "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {
+    "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
+        "projectUniqueName": "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
         "projectName": "SvDirect.Users.Service",
-        "projectPath": "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
+        "projectPath": "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\SvDirect.Users.Service.csproj",
         "packagesPath": "C:\\Users\\cash1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\obj\\",
+        "outputPath": "c:\\Users\\cash1\\Projects\\ApplicationDevelopment\\SvDirect\\src\\SvDirect.Users.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cash1\\AppData\\Roaming\\NuGet\\NuGet.Config"
